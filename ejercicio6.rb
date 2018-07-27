@@ -14,3 +14,12 @@ print "\n"
 print a
 print "\n"
 print b
+print "\n"
+
+restaurant_menu.each {|llave,valor| restaurant_menu[llave] = valor * 1.19}
+print "menu con iva\n"
+print restaurant_menu
+
+restaurant_menu.each {|llave, valor| restaurant_menu[llave] = valor * 0.8 if llave.index(" ")}
+print "Menu con descuento\n"
+print restaurant_menu
